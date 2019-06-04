@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 var prefix = "+";
-var adminprefix = 'a'
+var adminprefix = '!'
 
 
 const developers = ["234940017947049984"]
@@ -24,7 +24,7 @@ client.on('message', message => {
   client.user.setActivity(argresult , {type:'LISTENING'});
       message.channel.send(`**تـــ تغيير الحالة ــم   ${argresult}**`)
   } else 
-  if (message.content.startsWith(adminprefix + 's')) {
+  if (message.content.startsWith(adminprefix + 'Lst')) {
     client.user.setGame(argresult, "https://www.twitch.tv/dream");
       message.channel.send(`**تـــ تغيير الحالة ــم**`)
   }
